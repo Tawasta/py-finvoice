@@ -13265,7 +13265,7 @@ class QuantityType(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='QuantityType'):
         if self.QuantityUnitCode is not None and 'QuantityUnitCode' not in already_processed:
             already_processed.add('QuantityUnitCode')
-            outfile.write(' QuantityUnitCode=%s' % (quote_attrib(self.QuantityUnitCode), ))
+            outfile.write(' QuantityUnitCode=%s' % (quote_attrib(self.QuantityUnitCode).encode(ExternalEncoding), ))
         if self.extensiontype_ is not None and 'xsi:type' not in already_processed:
             already_processed.add('xsi:type')
             outfile.write(' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"')
@@ -13510,7 +13510,7 @@ class AnyPartyTextType(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='AnyPartyTextType'):
         if self.AnyPartyCode is not None and 'AnyPartyCode' not in already_processed:
             already_processed.add('AnyPartyCode')
-            outfile.write(' AnyPartyCode=%s' % (quote_attrib(self.AnyPartyCode), ))
+            outfile.write(' AnyPartyCode=%s' % (quote_attrib(self.AnyPartyCode).encode(ExternalEncoding), ))
         if self.extensiontype_ is not None and 'xsi:type' not in already_processed:
             already_processed.add('xsi:type')
             outfile.write(' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"')
@@ -13675,7 +13675,7 @@ class date(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='date'):
         if self.Format is not None and 'Format' not in already_processed:
             already_processed.add('Format')
-            outfile.write(' Format=%s' % (self.gds_format_string(quote_attrib(self.Format).encode(ExternalEncoding), input_name='Format'), ))
+            outfile.write(' Format=%s' % (self.gds_format_string(quote_attrib(self.Format).encode(ExternalEncoding).encode(ExternalEncoding), input_name='Format'), ))
     def exportChildren(self, outfile, level, namespace_='', name_='date', fromsubclass_=False, pretty_print=True):
         pass
     def exportLiteral(self, outfile, level, name_='date'):
@@ -13927,7 +13927,7 @@ class unitAmount(GeneratedsSuper):
             outfile.write(' AmountCurrencyIdentifier=%s' % (self.gds_format_string(quote_attrib(self.AmountCurrencyIdentifier).encode(ExternalEncoding), input_name='AmountCurrencyIdentifier'), ))
         if self.UnitPriceUnitCode is not None and 'UnitPriceUnitCode' not in already_processed:
             already_processed.add('UnitPriceUnitCode')
-            outfile.write(' UnitPriceUnitCode=%s' % (quote_attrib(self.UnitPriceUnitCode), ))
+            outfile.write(' UnitPriceUnitCode=%s' % (quote_attrib(self.UnitPriceUnitCode).encode(ExternalEncoding), ))
     def exportChildren(self, outfile, level, namespace_='', name_='unitAmount', fromsubclass_=False, pretty_print=True):
         pass
     def exportLiteral(self, outfile, level, name_='unitAmount'):
@@ -15359,7 +15359,7 @@ class DefinitionHeaderTextType(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='DefinitionHeaderTextType'):
         if self.DefinitionCode is not None and 'DefinitionCode' not in already_processed:
             already_processed.add('DefinitionCode')
-            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode), ))
+            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode).encode(ExternalEncoding), ))
     def exportChildren(self, outfile, level, namespace_='', name_='DefinitionHeaderTextType', fromsubclass_=False, pretty_print=True):
         pass
     def exportLiteral(self, outfile, level, name_='DefinitionHeaderTextType'):
@@ -15543,7 +15543,7 @@ class RowDefinitionHeaderTextType(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='RowDefinitionHeaderTextType'):
         if self.DefinitionCode is not None and 'DefinitionCode' not in already_processed:
             already_processed.add('DefinitionCode')
-            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode), ))
+            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode).encode(ExternalEncoding), ))
     def exportChildren(self, outfile, level, namespace_='', name_='RowDefinitionHeaderTextType', fromsubclass_=False, pretty_print=True):
         pass
     def exportLiteral(self, outfile, level, name_='RowDefinitionHeaderTextType'):
@@ -17086,7 +17086,7 @@ class SubRowDefinitionHeaderTextType(GeneratedsSuper):
     def exportAttributes(self, outfile, level, already_processed, namespace_='', name_='SubRowDefinitionHeaderTextType'):
         if self.DefinitionCode is not None and 'DefinitionCode' not in already_processed:
             already_processed.add('DefinitionCode')
-            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode), ))
+            outfile.write(' DefinitionCode=%s' % (quote_attrib(self.DefinitionCode).encode(ExternalEncoding), ))
     def exportChildren(self, outfile, level, namespace_='', name_='SubRowDefinitionHeaderTextType', fromsubclass_=False, pretty_print=True):
         pass
     def exportLiteral(self, outfile, level, name_='SubRowDefinitionHeaderTextType'):
